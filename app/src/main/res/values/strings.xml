@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">App by Tung</string>
+    <string name="userInput">Enter name</string>
+    <string name="userInputHint">Please enter your login name</string>
+    <string name="loginBtn">Login</string>
+    <string name="defaultBtnText">Button</string>
 </resources>
