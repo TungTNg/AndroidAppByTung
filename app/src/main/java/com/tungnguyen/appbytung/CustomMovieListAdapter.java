@@ -88,6 +88,7 @@ public class CustomMovieListAdapter extends RecyclerView.Adapter<CustomMovieList
             movieItemIntent.putExtra("MovieYear", localDataSet[position][1]);
             movieItemIntent.putExtra("MovieDirector", localDataSet[position][2]);
             movieItemIntent.putExtra("MovieImageURL", localDataSet[position][3]);
+            movieItemIntent.putExtra("MovieDescription", localDataSet[position][4]);
             view.getContext().startActivity(movieItemIntent);
         });
     }

@@ -1,6 +1,7 @@
 package com.tungnguyen.appbytung;
 
 import android.os.Bundle;
+import android.text.method.ScrollingMovementMethod;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -16,7 +17,6 @@ public class MovieItemActivity extends AppCompatActivity {
         setContentView(R.layout.movie_item_activity);
 
         Bundle extraInfo = getIntent().getExtras();
-        if (extraInfo != null) {
             TextView movieName = findViewById(R.id.movieItemName);
             TextView movieYear = findViewById(R.id.movieItemYear);
             TextView movieDirector = findViewById(R.id.movieItemDirector);
@@ -27,13 +27,11 @@ public class MovieItemActivity extends AppCompatActivity {
             movieYear.setText(extraInfo.getString("MovieYear"));
             movieDirector.setText(extraInfo.getString("MovieDirector"));
             movieDescription.setText(extraInfo.getString("MovieDescription"));
+            movieDescription.setMovementMethod(new ScrollingMovementMethod());
+
             Picasso.get()
                     .load(extraInfo.getString("MovieImageURL"))
                     .fit().centerInside()
                     .into(movieImage);
-            }
-
-
-
     }
 }

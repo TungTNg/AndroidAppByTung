@@ -13,10 +13,12 @@
         android:theme="@style/Theme.AppByTung">
         <activity
             android:name=".MovieItemActivity"
+            android:label="Movie details"
             android:exported="true"
             android:parentActivityName=".MovieListActivity" />
         <activity
             android:name=".MovieListActivity"
+            android:label="List of Zombie movies"
             android:exported="true"
             android:parentActivityName=".MainActivity" />
         <activity
