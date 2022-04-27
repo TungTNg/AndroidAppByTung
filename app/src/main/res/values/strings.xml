@@ -4,4 +4,9 @@
     <string name="userInputHint">Please enter your login name</string>
     <string name="loginBtn">Login</string>
     <string name="defaultBtnText">Button</string>
+    <string name="movieName">Movie Name</string>
+    <string name="movieYear">Release Year</string>
+    <string name="movieDirector">Release Director</string>
+    <string name="movieDescription">Sample Description for Movie item</string>
+    <string name="title_activity_movie_item">MovieItemActivity</string>
 </resources>
