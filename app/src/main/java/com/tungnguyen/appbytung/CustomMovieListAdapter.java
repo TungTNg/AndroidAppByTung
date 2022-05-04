@@ -27,9 +27,9 @@ public class CustomMovieListAdapter extends RecyclerView.Adapter<CustomMovieList
         public ViewHolder(View view) {
             super(view);
 
-            movieNameView = view.findViewById(R.id.movieListItemName);
+            movieNameView = view.findViewById(R.id.cameraListItemDescription);
             movieYearView = view.findViewById(R.id.movieListItemYear);
-            movieImageView = view.findViewById(R.id.movieListItemImage);
+            movieImageView = view.findViewById(R.id.cameraListItemImage);
         }
 
         public TextView getMovieNameView() {

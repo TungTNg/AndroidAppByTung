@@ -12,34 +12,24 @@
         android:layout_width="wrap_content"
         android:layout_height="0dp"
         android:layout_marginTop="25dp"
-        android:text="@string/movieName"
+        android:text="@string/cameraDescription"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/movieListItemYear"
-        android:layout_width="wrap_content"
-        android:layout_height="0dp"
-        android:layout_marginTop="5dp"
-        android:text="@string/movieYear"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cameraListItemDescription" />
-
     <ImageView
         android:id="@+id/cameraListItemImage"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="16dp"
         android:contentDescription="@string/movieDescription"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/movieListItemYear"
+        app:layout_constraintTop_toBottomOf="@+id/cameraListItemDescription"
         app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@android:drawable/list_selector_background" />
 </androidx.constraintlayout.widget.ConstraintLayout>

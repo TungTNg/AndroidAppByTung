@@ -9,4 +9,5 @@
     <string name="movieDirector">Release Director</string>
     <string name="movieDescription">Sample Description for Movie item</string>
     <string name="title_activity_movie_item">MovieItemActivity</string>
+    <string name="cameraDescription">Sample Description for Camera item</string>
 </resources>

@@ -17,12 +17,13 @@ public class CustomButtonAdapter extends ArrayAdapter<Button> {
     private boolean toastIsShowing = false;
     private Toast curToast;
 
-    private Map<String, Class<?>> buttonNameIntentMap = new HashMap<>();
+    private final Map<String, Class<?>> buttonNameIntentMap = new HashMap<>();
 
     public CustomButtonAdapter(Context context, ArrayList<Button> buttons) {
         super(context, 0, buttons);
 
         buttonNameIntentMap.put("Movies", MovieListActivity.class);
+        buttonNameIntentMap.put("Cameras", CameraListActivity.class);
     }
 
     @Override
@@ -48,8 +49,8 @@ public class CustomButtonAdapter extends ArrayAdapter<Button> {
         btnInView.setOnClickListener(view -> {
             // Launch activities based on button's text name
             if(buttonNameIntentMap.containsKey(btnInView.getText())) {
-                Intent movieListIntent = new Intent(getContext(), buttonNameIntentMap.get(btnInView.getText()));
-                getContext().startActivity(movieListIntent);
+                Intent itemListIntent = new Intent(getContext(), buttonNameIntentMap.get(btnInView.getText()));
+                getContext().startActivity(itemListIntent);
             } else {
                 // Make toast appear right away when being clicked
                 if (toastIsShowing) {

@@ -3,6 +3,7 @@
     package="com.tungnguyen.appbytung">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
         android:allowBackup="true"
@@ -12,15 +13,20 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppByTung">
         <activity
-            android:name=".MovieItemActivity"
-            android:label="Movie details"
+            android:name=".CameraListActivity"
             android:exported="true"
-            android:parentActivityName=".MovieListActivity" />
+            android:label="List of traffic cameras"
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".MovieListActivity"
-            android:label="List of Zombie movies"
             android:exported="true"
+            android:label="List of Zombie movies"
             android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".MovieItemActivity"
+            android:exported="true"
+            android:label="Movie details"
+            android:parentActivityName=".MovieListActivity" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
