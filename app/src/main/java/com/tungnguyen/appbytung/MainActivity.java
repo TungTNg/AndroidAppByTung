@@ -1,10 +1,6 @@
 package com.tungnguyen.appbytung;
 
-import android.content.Context;
-import android.net.ConnectivityManager;
-import android.net.NetworkInfo;
 import android.os.Bundle;
-import android.util.Log;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.GridView;
@@ -24,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
 
         // Create buttons to add to grid
         ArrayList<Button> buttonList = new ArrayList<>();
-        String[] buttonNames = {"Movies", "Cameras", "Parks", "Traffic", "Music", "Food" };
+        String[] buttonNames = {"Movies", "Cameras", "Google Map", "Traffic", "Music", "Food" };
         for(String buttonName : buttonNames) {
             Button newBtn = new Button(this);
             newBtn.setText(buttonName);

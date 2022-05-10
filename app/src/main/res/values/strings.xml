@@ -10,4 +10,7 @@
     <string name="movieDescription">Sample Description for Movie item</string>
     <string name="title_activity_movie_item">MovieItemActivity</string>
     <string name="cameraDescription">Sample Description for Camera item</string>
+    <string name="default_info_title">Default Location Title</string>
+    <string name="default_info_snippet">Default Location Info</string>
+    <string name="pick_place">Please pick a place!</string>
 </resources>
