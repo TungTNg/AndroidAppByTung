@@ -25,6 +25,11 @@
             android:value="@integer/google_play_services_version" />
 
         <activity
+            android:name=".FirebaseActivity"
+            android:exported="true"
+            android:label="Firebase Activity"
+            android:parentActivityName=".MainActivity" />
+        <activity
             android:name=".GoogleMapActivity"
             android:exported="true"
             android:label="Google Map Activity"

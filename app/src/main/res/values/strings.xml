@@ -13,4 +13,7 @@
     <string name="default_info_title">Default Location Title</string>
     <string name="default_info_snippet">Default Location Info</string>
     <string name="pick_place">Please pick a place!</string>
+    <string name="usernamePrompt">Enter your username</string>
+    <string name="passwordPrompt">Enter your password</string>
+    <string name="emailPrompt">Enter your email</string>
 </resources>
